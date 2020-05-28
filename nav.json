@@ -1,4 +1,5 @@
 {
+   "test":"Hallo",
    "00":
    {
       "id":"00",
@@ -22,7 +23,6 @@
       "textColor":"",
       "tooltip":""
    },
-   "test":"Hallo",
    "weborder":{
       "id":"0010",
       "name":"Weborder (Connector)",
