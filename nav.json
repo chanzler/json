@@ -22,6 +22,7 @@
       "textColor":"",
       "tooltip":""
    },
+   "test":"Hallo",
    "weborder":{
       "id":"0010",
       "name":"Weborder (Connector)",
