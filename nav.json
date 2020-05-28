@@ -1,6 +1,5 @@
 {
-   "test":"Hallo",
-   "00":
+   "inbound":
    {
       "id":"00",
       "name":"Inbound:",
@@ -12,7 +11,7 @@
       "textColor":"",
       "tooltip":""
    },
-   "0000":{
+   "weborderquarantine":{
       "id":"0000",
       "name":"Weborder & QuarantÃ¤ne:",
       "value":0,
@@ -23,7 +22,7 @@
       "textColor":"",
       "tooltip":""
    },
-   "weborder":{
+   "weborderconnector":{
       "id":"0010",
       "name":"Weborder (Connector)",
       "value":18,
@@ -34,7 +33,7 @@
       "textColor":"",
       "tooltip":"Logik: Letzte Connector/Datum/Zeit aelter [SCHWELLENWERT] Minuten als aktuelle Datum/Zeit = Farbe Rot\n1. Schwellwert: 0\n2. Schwellwert: 25 (red)\nOperator: >\nEinheit: MINUTE"
    },
-   "0020":{
+   "weborder":{
       "id":"0020",
       "name":"Weborder",
       "value":18,
@@ -45,7 +44,7 @@
       "textColor":"",
       "tooltip":"Logik: Ã„lteste Connector/Datum/Zeit aelter [SCHWELLENWERT] Minuten als aktuelle Datum/Zeit = Farbe Gelb\n1. Schwellwert: 10 (yellow)\n2. Schwellwert: 20 (red)\nOperator: >\nEinheit: MINUTE"
    },
-   "0030":{
+   "quarantineoldertoday":{
       "id":"0030",
       "name":"QuarantÃ¤ne Ã¤lter heute",
       "value":0,
@@ -56,7 +55,7 @@
       "textColor":"",
       "tooltip":"Logik: Auftrag vorhanden bei dem Auftragsdatum < 1  Tag als Arbeitsdatum ist = Anzeige Gelb\n1. Schwellwert: 0\n2. Schwellwert: 999 (yellow)\nOperator: >\nEinheit: DAY"
    },
-   "0035":{
+   "quarantineamount":{
       "id":"0035",
       "name":"QuarantÃ¤ne Menge",
       "value":3,
@@ -66,335 +65,5 @@
       "time":"15:26:09",
       "textColor":"",
       "tooltip":"Logik: QuarantÃ¤ne Auftragsmenge <  [SCHWELLENWERT] = Anzeige Gelb\n1. Schwellwert: 0\n2. Schwellwert: 100 (red)\nOperator: >\nEinheit: Anzahl"
-   },
-   "0100":{
-      "id":"0100",
-      "name":"VerkaufsauftrÃ¤ge:",
-      "value":0,
-      "color":"",
-      "type":"HEADER",
-      "position":"LEFT",
-      "time":"15:26:10",
-      "textColor":"",
-      "tooltip":""
-   },
-   "0140":{
-      "id":"0140",
-      "name":"AuftrÃ¤ge offen (ohne Vorkasse & Fehlmenge)",
-      "value":24,
-      "color":"black",
-      "type":"DATA",
-      "position":"LEFT",
-      "time":"15:26:11",
-      "textColor":"",
-      "tooltip":"Logik: Nur Info - keine Alert vorhanden\n1. Schwellwert: 0\n2. Schwellwert: 0\nEinheit: Anzahl"
-   },
-   "0150":{
-      "id":"0150",
-      "name":"AuftrÃ¤ge freigegeben (ohne Fehlm. & Kom.)",
-      "value":3603,
-      "color":"",
-      "type":"DATA",
-      "position":"LEFT",
-      "time":"15:26:54",
-      "textColor":"",
-      "tooltip":"Logik: Anzahl Auftraege kommissionierbar ohne Kommission. Mehr als [SCHWELLENWERT] Stueck = Farbe Gelb\n1. Schwellwert: 0\n2. Schwellwert: 99999 (yellow)\nOperator: >\nEinheit: Anzahl"
-   },
-   "0155":{
-      "id":"0155",
-      "name":"AuftrÃ¤ge zu buchen",
-      "value":0,
-      "color":"black",
-      "type":"DATA",
-      "position":"LEFT",
-      "time":"15:24:38",
-      "textColor":"",
-      "tooltip":"Logik: Anzahl zu buchender AuftrÃ¤ge\n1. Schwellwert: 100 (yellow)\n2. Schwellwert: 200 (red)\nOperator: >\nEinheit: Anzahl"
-   },
-   "0160":{
-      "id":"0160",
-      "name":"AuftrÃ¤ge gebucht",
-      "value":2508,
-      "color":"black",
-      "type":"DATA",
-      "position":"LEFT",
-      "time":"15:24:39",
-      "textColor":"",
-      "tooltip":"Logik: Anzahl gebuchter AuftrÃ¤ge heute (Order Status 2020)\n1. Schwellwert: 0\n2. Schwellwert: 0\nEinheit: Anzahl"
-   },
-   "0170":{
-      "id":"0170",
-      "name":"Auftragspapiere zu drucken",
-      "value":3,
-      "color":"black",
-      "type":"DATA",
-      "position":"LEFT",
-      "time":"15:24:39",
-      "textColor":"",
-      "tooltip":"Logik: Anzahl zu druckender Auftragspapiere\n1. Schwellwert: 250 (yellow)\n2. Schwellwert: 500 (red)\nOperator: >\nEinheit: Anzahl"
-   },
-   "0250":{
-      "id":"0250",
-      "name":"REST XML DatensÃ¤tze",
-      "value":0,
-      "color":"",
-      "type":"HEADER",
-      "position":"LEFT",
-      "time":"15:24:40",
-      "textColor":"",
-      "tooltip":""
-   },
-   "0260":{
-      "id":"0260",
-      "name":"Nicht verarbeitete XML",
-      "value":0,
-      "color":"black",
-      "type":"DATA",
-      "position":"LEFT",
-      "time":"15:24:40",
-      "textColor":"",
-      "tooltip":"Logik: InsertZeit > [SCHWELLENWERT 1] Min. abgeh. = Gelb, > [SCHWELLENWERT 2] Minuten nicht geae./eingel. = Rot\n1. Schwellwert: 20 (yellow)\n2. Schwellwert: 35 (red)\nOperator: >\nEinheit: MINUTE"
-   },
-   "0270":{
-      "id":"0270",
-      "name":"Fehlerhafte XML",
-      "value":0,
-      "color":"black",
-      "type":"DATA",
-      "position":"LEFT",
-      "time":"15:24:40",
-      "textColor":"",
-      "tooltip":"Logik: Flag Fehler TRUE in XML-Datensatz\n1. Schwellwert: 0 (yellow)\n2. Schwellwert: 300 (red)\nOperator: >\nEinheit: Anzahl"
-   },
-   "0300":{
-      "id":"0300",
-      "name":"B2B-Datenimport:",
-      "value":0,
-      "color":"",
-      "type":"HEADER",
-      "position":"LEFT",
-      "time":"15:24:41",
-      "textColor":"",
-      "tooltip":""
-   },
-   "0310":{
-      "id":"0310",
-      "name":"Verbleibende Import Files",
-      "value":0,
-      "color":"black",
-      "type":"DATA",
-      "position":"LEFT",
-      "time":"15:24:42",
-      "textColor":"",
-      "tooltip":"Logik: Nicht verarbeitete B2B-Dateien\n1. Schwellwert: 5 (yellow)\n2. Schwellwert: 10 (red)\nOperator: >\nEinheit: Anzahl"
-   },
-   "0400":{
-      "id":"0400",
-      "name":"LVS:",
-      "value":0,
-      "color":"",
-      "type":"HEADER",
-      "position":"LEFT",
-      "time":"15:24:42",
-      "textColor":"",
-      "tooltip":""
-   },
-   "0410":{
-      "id":"0410",
-      "name":"Unverarbeitete *OUT",
-      "value":0,
-      "color":"black",
-      "type":"DATA",
-      "position":"LEFT",
-      "time":"15:24:43",
-      "textColor":"",
-      "tooltip":"Logik: Nicht verarbeitete LVS-OUT\n1. Schwellwert: 0\n2. Schwellwert: 9999 (red)\nOperator: >\nEinheit: DAY"
-   },
-   "05":{
-      "id":"05",
-      "name":"Outbound:",
-      "value":0,
-      "color":"",
-      "type":"GLOBAL",
-      "position":"RIGHT",
-      "time":"15:24:43",
-      "textColor":"",
-      "tooltip":""
-   },
-   "0500":{
-      "id":"0500",
-      "name":"Artikeltransfer:",
-      "value":0,
-      "color":"",
-      "type":"HEADER",
-      "position":"RIGHT",
-      "time":"15:24:44",
-      "textColor":"",
-      "tooltip":""
-   },
-   "0505":{
-      "id":"0505",
-      "name":"Item Transfer",
-      "value":225,
-      "color":"black",
-      "type":"DATA",
-      "position":"RIGHT",
-      "time":"15:24:44",
-      "textColor":"",
-      "tooltip":"Logik: InsertZeit > [SCHWELLENWERT 1] Min als akt. Zeit =  Gelb, aelter als [SCHWELLENWERT 2] Min als aktuelle Zeit = Rot\n1. Schwellwert: 11 (yellow)\n2. Schwellwert: 20 (red)\nOperator: >\nEinheit: MINUTE"
-   },
-   "0507":{
-      "id":"0507",
-      "name":"Article Web (Connector)",
-      "value":2863,
-      "color":"black",
-      "type":"DATA",
-      "position":"RIGHT",
-      "time":"15:24:45",
-      "textColor":"",
-      "tooltip":"Logik: InsertZeit > [SCHWELLENWERT 1] Min. nicht geae./abgeh. = Gelb, > [SCHWELLENWERT 2] Minuten nicht geae./abgeh. = Rot\n1. Schwellwert: 20 (yellow)\n2. Schwellwert: 35 (red)\nOperator: >\nEinheit: MINUTE"
-   },
-   "0508":{
-      "id":"0508",
-      "name":"Article System Web (Connector)",
-      "value":412,
-      "color":"black",
-      "type":"DATA",
-      "position":"RIGHT",
-      "time":"15:24:45",
-      "textColor":"",
-      "tooltip":"Logik: InsertZeit > [SCHWELLENWERT 1] Min. nicht geae./abgeh. = Gelb, > [SCHWELLENWERT 2] Minuten nicht geae./abgeh. = Rot\n1. Schwellwert: 20 (yellow)\n2. Schwellwert: 35 (red)\nOperator: >\nEinheit: MINUTE"
-   },
-   "0509":{
-      "id":"0509",
-      "name":"ShopId Zuweisung (Connector)",
-      "value":0,
-      "color":"black",
-      "type":"DATA",
-      "position":"RIGHT",
-      "time":"15:24:46",
-      "textColor":"",
-      "tooltip":"Logik: InsertZeit > [SCHWELLENWERT 1] Min. abgeh. = Gelb, > [SCHWELLENWERT 2] Minuten nicht geae./abgeh. = Rot\n1. Schwellwert: 20 (yellow)\n2. Schwellwert: 35 (red)\nOperator: >\nEinheit: MINUTE"
-   },
-   "0530":{
-      "id":"0530",
-      "name":"REST XML DatensÃ¤tze",
-      "value":0,
-      "color":"",
-      "type":"HEADER",
-      "position":"RIGHT",
-      "time":"15:24:47",
-      "textColor":"",
-      "tooltip":""
-   },
-   "0532":{
-      "id":"0532",
-      "name":"Nicht verarbeitete XML",
-      "value":28,
-      "color":"black",
-      "type":"DATA",
-      "position":"RIGHT",
-      "time":"15:24:47",
-      "textColor":"",
-      "tooltip":"Logik: InsertZeit > [SCHWELLENWERT 1] Min. abgeh. = Gelb, > [SCHWELLENWERT 2] Minuten nicht geae./abgeh. = Rot\n1. Schwellwert: 20 (yellow)\n2. Schwellwert: 35 (red)\nOperator: >\nEinheit: MINUTE"
-   },
-   "0534":{
-      "id":"0534",
-      "name":"Keine positive HTTP RÃ¼ckmeldung",
-      "value":0,
-      "color":"black",
-      "type":"DATA",
-      "position":"RIGHT",
-      "time":"15:24:48",
-      "textColor":"",
-      "tooltip":"Logik: XML mit Http-Status <> 200\n1. Schwellwert: 0 (yellow)\n2. Schwellwert: 100 (red)\nOperator: >\nEinheit: Anzahl"
-   },
-   "0550":{
-      "id":"0550",
-      "name":"Versand:",
-      "value":0,
-      "color":"",
-      "type":"HEADER",
-      "position":"RIGHT",
-      "time":"15:24:48",
-      "textColor":"",
-      "tooltip":""
-   },
-   "0580":{
-      "id":"0580",
-      "name":"Fehlerhafte E-Mails (letzte 3 Werktage)",
-      "value":0,
-      "color":"black",
-      "type":"DATA",
-      "position":"RIGHT",
-      "time":"15:24:49",
-      "textColor":"",
-      "tooltip":"1. Schwellwert: 0 (yellow)\n2. Schwellwert: 100 (red)\nOperator: >\nEinheit: Anzahl"
-   },
-   "0590":{
-      "id":"0590",
-      "name":"Versendete Pakete",
-      "value":2339,
-      "color":"black",
-      "type":"DATA",
-      "position":"RIGHT",
-      "time":"15:24:49",
-      "textColor":"",
-      "tooltip":"Logik: Heute gebuchte Pakete\n1. Schwellwert: 0\n2. Schwellwert: 0\nEinheit: Anzahl"
-   },
-   "0600":{
-      "id":"0600",
-      "name":"LVS:",
-      "value":0,
-      "color":"",
-      "type":"HEADER",
-      "position":"RIGHT",
-      "time":"15:24:50",
-      "textColor":"",
-      "tooltip":""
-   },
-   "0610":{
-      "id":"0610",
-      "name":"*INS nicht synchronisiert:",
-      "value":0,
-      "color":"black",
-      "type":"DATA",
-      "position":"RIGHT",
-      "time":"15:24:50",
-      "textColor":"",
-      "tooltip":"Logik: TIME_NEU > [SCHWELLENWERT 1] Min als akt. Zeit = Gelb, aelter als [SCHWELLENWERT 2] Min als aktuelle Zeit = Rot\n1. Schwellwert: 25 (yellow)\n2. Schwellwert: 60 (red)\nOperator: >\nEinheit: MINUTE"
-   },
-   "09":{
-      "id":"09",
-      "name":"Intern:",
-      "value":0,
-      "color":"",
-      "type":"GLOBAL",
-      "position":"RIGHT",
-      "time":"15:24:51",
-      "textColor":"",
-      "tooltip":""
-   },
-   "0910":{
-      "id":"0910",
-      "name":"Leere Artikel",
-      "value":0,
-      "color":"black",
-      "type":"DATA",
-      "position":"RIGHT",
-      "time":"15:24:51",
-      "textColor":"",
-      "tooltip":"Logik: Artikel ohne Inhalt vorhanden\n1. Schwellwert: 0\n2. Schwellwert: 0 (red)\nOperator: >\nEinheit: Anzahl"
-   },
-   "0930":{
-      "id":"0930",
-      "name":"NAV Sessions",
-      "value":61,
-      "color":"",
-      "type":"DATA",
-      "position":"RIGHT",
-      "time":"15:24:52",
-      "textColor":"",
-      "tooltip":"1. Schwellwert: 0\n2. Schwellwert: 98 (red)\nOperator: >\nEinheit: Anzahl"
    }
 }
